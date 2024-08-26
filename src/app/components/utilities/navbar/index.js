@@ -11,8 +11,8 @@ function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div >
-      <nav className="  fixed top-0 left-0 right-0 z-10 ">
-        <div className=" bg-yellow-200 rounded-xl md:w-[691.31px] md:justify-center md:flex justify-between px-2 mx-auto lg:max-w-7xl md:items-center md:flex ">
+      <nav className="  fixed top-5 left-0 right-0 z-10 ">
+        <div className=" bg-white md:bg-opacity-75 shadow-2xl rounded-xl md:w-[691.31px] md:justify-center md:flex justify-between px-1 mx-auto lg:max-w-7xl items-center md:flex ">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               
@@ -42,27 +42,27 @@ function NavBar() {
           </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              className={`flex-1 justify-self-center  mt-4   md:block md:pb-0 md:mt-4 ${
                 navbar ? 'p-12 md:p-0 block' : 'hidden'
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-5 font-medium md:text-sm md:text-blue-500 py-2 md:px-6 text-center   md:hover:bg-transparent">
+                <li className="pb-5 font-medium md:text-sm md:text-blue-500 py-2 md:px-6 text-center md:font-bold  md:hover:bg-transparent">
                   <Link href="#about" onClick={() => setNavbar(!navbar)}>
                     Feature
                   </Link>
                 </li>
-                <li className="pb-6 font-medium md:text-sm py-2 px-6 text-center  md:hover:bg-transparent">
+                <li className="pb-6 font-medium md:text-sm py-2 px-6 text-center md:font-bold  md:hover:bg-transparent">
                   <Link href="#blog" onClick={() => setNavbar(!navbar)}>
                     Pricing
                   </Link>
                 </li>
-                <li className="pb-6 font-medium md:text-sm  py-2 px-6 text-center    md:hover:bg-transparent">
+                <li className="pb-6 font-medium md:text-sm  py-2 px-6 text-center  md:font-bold   md:hover:bg-transparent">
                   <Link href="#contact" onClick={() => setNavbar(!navbar)}>
                     Demo
                   </Link>
                 </li>
-                <li className="pb-6 font-medium md:text-sm  py-2 px-6 text-center    md:hover:bg-transparent">
+                <li className="pb-6 font-medium md:text-sm  py-2 px-6 text-center md:font-bold    md:hover:bg-transparent">
                   <Link href="#projects" onClick={() => setNavbar(!navbar)}>
                     Blog
                   </Link>

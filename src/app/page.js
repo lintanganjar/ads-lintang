@@ -5,6 +5,7 @@ import Banner3 from "./components/banner3";
 import Banner4 from "./components/Banner4";
 import Banner5 from "./components/banner5";
 import Banner6 from "./components/banner6";
+import Banner7 from "./components/banner7";
 import Signin from "./components/utilities/Signin/page";
 
 import "./globals.css";
@@ -17,7 +18,8 @@ export default function Home() {
     <Banner3/>
     <Banner4/>
     <Banner5/>
-    <Banner6/>,
+    <Banner6/>
+    <Banner7/>
     <Signin/>
 
     

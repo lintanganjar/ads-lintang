@@ -5,7 +5,7 @@ import b4 from '/public/Group 250-cropped.svg'
 export default function Banner4() {
     return (
       <>
-      <div className="bg-[#ECF2FA] w-full pb-16 md:pl-[53px] pl-40px bg-center">
+      <div className="bg-[#ECF2FA] w-full h-screen md:pt-20 pb-16 md:pl-[53px] pl-40px bg-center">
       <div className=" flex md:gap-[95px] items-center flex-col md:flex-row pt-40">
         <div className="hidden md:block md:border-l-3 border-gray-400 h-full md:pl-5 "> 
           <p className="text-gray-400">Get Started</p>

@@ -11,16 +11,16 @@ function Banner6(props) {
     <>
       <div className={`h-full w-64 ${cardBgColor} p-4 rounded-lg`}>
         <div className="mb-5">
-          <div className="text-slate-900 font-semibold mb-1">{props.planName}</div>
+          <div className="text-slate-900 font-bold text-2xl mb-1">{props.planName}</div>
           <div className="text-sm text-slate-500 mb-5">{props.planDescription}</div>
 
           <div className="inline-flex items-baseline mb-2">
             {props.price === "Gratis" ? (
-              <span className="text-slate-900 font-bold text-3xl">Gratis</span>
+              <span className="text-slate-900 font-bold text-xl">Gratis</span>
             ) : (
               <>
-                <span className="text-slate-900 font-bold text-3xl">Rp. </span>
-                <span className="text-slate-900 font-bold text-4xl">{props.yearly ? props.price.yearly : props.price.monthly}.000</span>
+                <span className="text-slate-900 font-bold text-2xl">Rp. </span>
+                <span className="text-slate-900 font-bold text-2xl">{props.yearly ? props.price.yearly : props.price.monthly}.000</span>
                 <span className="text-slate-500 font-medium">/bulan</span>
               </>
             )}
@@ -55,7 +55,8 @@ export default function PricingTable() {
     <div className='bg-white w-full md:h-[740px] mt-16 mb-32   md:pl-[53px] pl-40px'>
       {/* Pricing toggle */}
       <div className="flex flex-col justify-center items-center max-w-[14rem] m-auto mb-8 lg:mb-16">
-        <h4 className="md:text-[34px] text-4xl mb-5 md:leading-[42px]  font-bold">Our Pricing</h4>
+        <h4 className="md:text-[34px] text-xl mb-5 md:leading-[42px]  font-bold">Our Pricing</h4>
+        <h4 className='md:hidden text-3xl font-bold'>Subscription</h4>
         <div className="relative flex w-full p-2 m-1 bg-white rounded-full drop-shadow-2xl">
           <span className="absolute inset-0 m-1 pointer-events-none" aria-hidden="true">
             <span className={`absolute inset-0 w-1/2 bg-indigo-500 rounded-full shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out ${yearly ? 'translate-x-0' : 'translate-x-full'}`}></span>
@@ -100,10 +101,13 @@ export default function PricingTable() {
             price="Gratis"
             how={"Start Now"}
             features={[
-              'Unlimited placeholder texts',
-              'Consectetur adipiscing elit',
-              'Excepteur sint occaecat cupidatat',
-              'Officia deserunt mollit anim',
+              '100 Auto reply',
+              '500 Broadcast',
+              '50 Campaign',
+              '500 Contact',
+              '50 Device',
+              'Excel / CSV Contact Import',
+              'Google Contact Sync'
             ]} />
 
           {/* Pricing tab 2 */}
@@ -115,11 +119,13 @@ export default function PricingTable() {
             how={"Get Started"}
             planDescription="Dapatkan akses selama 1 bulan dengan paket Basic. Manfaatkan fitur pesan otomatis, siaran pesan, dan manajemen kontak yang ditingkatkan. Rasakan kenyamanan integrasi yang luas dengan sinkronisasi kontak Google dan WhatsApp."
             features={[
-              'Unlimited placeholder texts',
-              'Consectetur adipiscing elit',
-              'Excepteur sint occaecat cupidatat',
-              'Officia deserunt mollit anim',
-              'Predefined chunks as necessary',
+              '100 Auto reply',
+              '500 Broadcast',
+              '50 Campaign',
+              '500 Contact',
+              '50 Device',
+              'Excel / CSV Contact Import',
+              'Google Contact Sync'
             ]} />
 
           {/* Pricing tab 3 */}
@@ -130,12 +136,13 @@ export default function PricingTable() {
             how={"Start Now"}
             planDescription="Perpanjang pengalaman Anda dengan paket Premium selama 1 bulan. Nikmati manfaat pesan otomatis, siaran pesan, dan manajemen kontak tanpa batasan. Aktifkan integrasi yang luas dengan sinkronisasi kontak Google dan WhatsApp."
             features={[
-              'Unlimited placeholder texts',
-              'Consectetur adipiscing elit',
-              'Excepteur sint occaecat cupidatat',
-              'Officia deserunt mollit anim',
-              'Predefined chunks as necessary',
-              'Free from repetition',
+              '100 Auto reply',
+              '500 Broadcast',
+              '50 Campaign',
+              '500 Contact',
+              '50 Device',
+              'Excel / CSV Contact Import',
+              'Google Contact Sync'
             ]} />
 
           {/* Pricing tab 4 */}
@@ -146,12 +153,13 @@ export default function PricingTable() {
             how={"Start Now"}
             planDescription="Jelajahi seluruh fitur dengan paket Pro selama 1 bulan. Dapatkan keuntungan dari pesan otomatis, siaran pesan, serta manajemen kontak yang tidak terbatas. Aktifkan integrasi yang luas dengan sinkronisasi kontak Google dan WhatsApp."
             features={[
-              'Unlimited placeholder texts',
-              'Consectetur adipiscing elit',
-              'Excepteur sint occaecat cupidatat',
-              'Officia deserunt mollit anim',
-              'Free from repetition',
-              'Extra support and consulting',
+              '100 Auto reply',
+              '500 Broadcast',
+              '50 Campaign',
+              '500 Contact',
+              '50 Device',
+              'Excel / CSV Contact Import',
+              'Google Contact Sync'
             ]} />
         </div>
       </div>

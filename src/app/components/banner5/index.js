@@ -19,7 +19,7 @@ export default function Banner5() {
         </div>
 
         <div className="md:w-[367px] w-[313px] flex flex-col justify-center md:w-[930px]">
-            <div className="text-center md:p-[62px]"><h4 className="md:text-[34px]  text-4xl mb-5 md:mb-7 md:leading-[42px] font-bold text-blue-500">"One Step Closer to More Effective and Connected Communication!"</h4></div>
+            <div className="text-center md:p-[62px]"><h4 className="md:text-[34px]  text-3xl mb-5 md:mb-7 md:leading-[42px] font-bold text-blue-500">"One Step Closer to More Effective and Connected Communication!"</h4></div>
             <div className="flex md:flex-row flex-col items-center">
                 <Image src={b5} width={750} height={700} className="w-full"></Image>
                 <div>
